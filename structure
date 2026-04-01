@@ -1,0 +1,28 @@
+ecommerce-ai-agent/
+│
+├── docs/
+│   └── architecture_flow.png      # (Upload your flowchart diagram here)
+│
+├── src/
+│   ├── agent/
+│   │   ├── __init__.py
+│   │   ├── state.py               # Defines the agent's memory/context
+│   │   ├── router.py              # LLM intent classification
+│   │   └── workflow.py            # LangGraph decision flow orchestration
+│   │
+│   ├── tools/
+│   │   ├── __init__.py
+│   │   ├── database.py            # Transactional records interaction
+│   │   └── knowledge_base.py      # Vector DB (RAG) interaction
+│   │
+│   └── utils/
+│       ├── __init__.py
+│       └── validators.py          # Input and Order ID validation
+│
+├── data/
+│   ├── policy_documents.md        # Mock knowledge source
+│   └── mock_transactions.json     # Mock database records
+│
+├── .gitignore                     # Files to exclude from version control
+├── requirements.txt               # Project dependencies
+└── README.md                      # The main assignment report
